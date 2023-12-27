@@ -11,15 +11,14 @@ export default function Intro({ content }: { content: string }) {
     const [clip, setClip] = useState(content)
 
     return (
-        <div className={`${cal.className} h-full flex flex-col justify-center`}>
-            <div className='text-2xl top-1/2'>
+        <div className={`${cal.className} h-full flex flex-col w-2/3 justify-center`}>
+            <div className='text-7xl top-1/2'>
                 FULL STACK DEVELOPER
-            {clip == "home" ? <div>Home</div> : ''}
             </div>
-            <div>
+            <div className='text-5xl py-2'>
                 Syed Muhammad Ashhar
             </div>
-            <div>
+            <div className='text-2xl py-2'>
                 Experienced Full Stack Web Developer with 10+ years in Industrial & Manufacturing Engineering. Expertise in project management, engineering design, maintenance. Proficient in Next.js, Tailwind CSS, React, APIs. Actively learning GenAI for innovative full-stack applications. Eager to contribute to dynamic web development and AI projects.
             </div>
 

@@ -1,14 +1,16 @@
 import Intro from "./intro/page";
+import Projects from "./projects/page";
 
 
 export default function Content({ page }: { page: string }) {
     return (
-        <div className="h-full top-1/2 w-1/2">This is the {page}
+        <div className="h-full top-1/2 w-full flex items-center justify-center">
             {/* <div>Projects</div>
             <div>About</div>
             <div>Contact</div>
             <div>Social Media</div> */}
-            <Intro content={page}/>
+            {page == 'home' ? <Intro content={page}/> : ''}
+            {page == 'projects' ? <Projects /> : ''}
         </div>
     )
 }
